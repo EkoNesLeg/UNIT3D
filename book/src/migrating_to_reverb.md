@@ -45,12 +45,22 @@ Start from the `REVERB_*` and `VITE_REVERB_*` keys in `env.example` to avoid mis
 > `VITE_REVERB_*` must reflect the public hostname, port, and scheme reachable by browsers (typically your TLS vhost).  
 > `REVERB_HOST` and `REVERB_PORT` should remain bound to `127.0.0.1` behind Nginx.
 
+### Generate Reverb credentials
+
+Run the following to generate a random key and secret:
+
+```bash
+php -r "echo bin2hex(random_bytes(16)) . PHP_EOL;"
+````
+then place the outputs into `REVERB_APP_KEY` and `REVERB_APP_SECRET`:
+
+
 ```dotenv
 BROADCAST_CONNECTION=reverb
 
 REVERB_APP_ID=100001
-REVERB_APP_KEY=example_reverb_key
-REVERB_APP_SECRET=example_reverb_secret
+REVERB_APP_KEY=
+REVERB_APP_SECRET=
 
 REVERB_HOST=127.0.0.1
 REVERB_PORT=1967
