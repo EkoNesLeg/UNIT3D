@@ -14,6 +14,8 @@
 - [Server Management](server_management.md)
 - [Meilisearch Setup](meilisearch_setup.md)
 - [UNIT3D-Announce](unit3d_announce.md)
+- [Laravel Reverb Deployment](laravel_reverb_deployment.md)
+- [Migrating to Laravel Reverb](migrating_to_reverb.md)
 
 # Performance & Optimization
 
